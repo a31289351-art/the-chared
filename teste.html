@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="oii">
+    <title>Preencha o Formulário</title>
+    <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+    <div class="quadrado">
+    <h1>27 Garage</h1>
+    <h2>preencha os campos abaixo:</h2>
+    <div class="form">
+        <input id="codigo" class="caixa1" type="text" placeholder="nome:">
+        <input class="caixa2" type="text" placeholder="sobrenome:">
+        <button onclick="verificar()">Enviar</button>
+        <script>
+            function verificar() {
+    let valor = document.getElementById("codigo").value;
+                
+    if (valor === "Arthur") {
+        window.location.href = "https://youtube.com";
+    } else {
+        alert("Código incorreto!");
+    }
+}
+        </script>
+    </div>
+    <br>
+    <u>Nenhuma informação sua será armazenada.</u>
+    <br>
+    <img class="gato" src="qrcode_a31289351-art.github.io.png">
+    <br>
+    <button onclick="alert('Você será redirecionado para o site do Garage 27.')">Clique aqui para acessar o site do Garage 27</button>
+    </div>
+</body>
+</html>
